@@ -1,0 +1,93 @@
+/*
+** nativize.css
+** Makes the UI feel more native
+*/
+
+html {
+	font-family: sans-serif;
+	-webkit-user-select: none; /* disable selection */
+	-webkit-user-drag: none; /* disable dragging */
+	cursor: default; /* use default cursor */
+}
+
+body {
+	margin: 0; /* remove default margin */
+	background-color: aliceblue;
+}
+
+
+/* enable text selection */
+
+.is-selectable, pre, code {
+	-webkit-user-select: auto;
+	cursor: auto;
+}
+
+
+/* Buttons and links */
+
+button{
+	cursor: default;
+}
+
+/* Internal links */
+a {
+	cursor: pointer;
+	text-decoration: none;
+	border-bottom: 1px dashed;
+	outline: none;
+}
+
+/* New window (target) + external links */
+a[target],
+a[href^="https://"],
+a[href^="http://"] {
+	border-bottom: 1px solid;
+}
+
+.brand-logo{
+	border-bottom: none;
+}
+
+a:hover,
+a:focus {
+	border-bottom: none;
+}
+
+
+/* Images */
+
+img {
+	-webkit-user-drag: none; /* disable dragging */
+}
+
+.container-main{
+	margin-top: 50px;
+}
+
+.content {
+	flex: 1;
+	position: relative;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
+}
+.content.is-shown {
+	visibility: visible;;
+	opacity: 1;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+
+.nav{
+	background-color: #2ba5b7;
+}
