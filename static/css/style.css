@@ -15,6 +15,11 @@ body {
 	background-color: aliceblue;
 }
 
+h1 {
+	font-size: 50px;
+	font-weight: 100px
+	margin: auto;
+}
 
 /* enable text selection */
 
@@ -45,15 +50,11 @@ a[href^="http://"] {
 	border-bottom: 1px solid;
 }
 
-.brand-logo{
-	border-bottom: none;
-}
 
 a:hover,
 a:focus {
 	border-bottom: none;
 }
-
 
 /* Images */
 
@@ -87,7 +88,8 @@ main {
 	flex: 1 0 auto;
 }
 
-
-.nav{
-	background-color: #2ba5b7;
+.card {
+	width: 300px;
+	height: 400px;
+	margin: auto;
 }

@@ -1,39 +1,50 @@
 <template class="task-template">
-	<div class="" id="login-screen">
-		<div class="card hoverable small">
-			<div class="card-image">
-				<img src="static/img/blank-profile.png" alt="">
-			<span class="card-title">Management</span>
-			</div>
-			<div class="card-content">
-				
-			</div>
-		</div>
+	<div class="row" id="login-screen">
+		<h1>LAB MANAGEMENT SYSTEM</h1>
+		<div class="card left">
+    		<div class="card-image ">
+      			<img class="activator" src="static/img/blank-profile.png">
+    		</div>
+    		<div class="card-content">
+      			<span class="card-title activator grey-text text-darken-4">Administrator<i class="material-icons right">more_vert</i></span>
+    		</div>
+    		<div class="card-reveal">
+      			<span class="card-title grey-text text-darken-4">Login<i class="material-icons right">close</i></span>
+      			<div class="input-field col s6">
+					<input  id="student_id" type="text" class="">
+					<label for="student_id">ID</label>
+				</div>
+				<div class="input-field col s6">
+					<input id="password" type="password" class="">
+					<label for="password">Password</label>
+				</div>		
+				<button class="btn waves-effect waves-light right" id="login-btn" type="submit" name="action">Submit
+				<i class="material-icons right">send</i>
+				</button>
+    		</div>
+  		</div>
 
-
-		 <div class="card">
-    		<div class="card-image waves-effect waves-block waves-light">
+		 <div class="card right">
+    		<div class="card-image ">
       			<img class="activator" src="static/img/blank-lab-tech.png">
     		</div>
     		<div class="card-content">
-      			<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      			<p><a href="#">This is a link</a></p>
+      			<span class="card-title activator grey-text text-darken-4">Assistant<i class="material-icons right">more_vert</i></span>
     		</div>
     		<div class="card-reveal">
-      			<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      				<div class="input-field col s6">
-						<input  id="student_id" type="text" class="hello">
-						<label for="student_id">Student ID</label>
-					</div>
-					<div class="input-field col s6">
-						<input id="password" type="password" class="">
-						<label for="password">Password</label>
-					</div>		
+      			<span class="card-title grey-text text-darken-4">Login<i class="material-icons right">close</i></span>
+      			<div class="input-field col s6">
+					<input  id="student_id" type="text" class="">
+					<label for="student_id">ID</label>
+				</div>
+				<div class="input-field col s6">
+					<input id="password" type="password" class="">
+					<label for="password">Password</label>
+				</div>		
 				<button class="btn waves-effect waves-light right" id="login-btn" type="submit" name="action">Submit
 				<i class="material-icons right">send</i>
-			</button>
-    </div>
-  </div>
-
+				</button>
+    		</div>
+  		</div>
 	</div>
 </template>
