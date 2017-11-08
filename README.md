@@ -18,7 +18,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 [On Linux/MacOS]
 
-You will use node package manager `npm` and `git`  to  run this application,assuming already installed. 
+You will `npm` and `git`  to  run this application,assuming already installed. 
 
 Clone repo:
 ```
