@@ -1,5 +1,18 @@
 /* global $, document */
 
+window.onload=function(){
+	var pages = document.getElementById('page');
+	var loginscreen = document.getElementById('login-screen');
+	var loginButton=document.getElementById('login-btn');
+	//console.log(loginButton);
+	var dashboard=document.getElementById('home-screen');
+	pages.innerHTML=loginscreen.innerHTML;
+	loginButton.onclick=function(){
+		//document.removeChild(loginscreen);
+		pages.innerHTML=dashboard.innerHTML;
+	};
+	
+};
 function login(student) {
 	if (!student.password || !student.student_id) {
 		return false;
@@ -10,46 +23,3 @@ function login(student) {
 function logout() {
 	return true;
 }
-
-$( document ).ready(function () {
-	$( ".button-collapse" ).sideNav();
-	$( "#login-screen" ).addClass("is-shown");
-	
-	$( "#login-screen input" ).keyup(function () {
-		$( this ).removeClass("invalid");
-		$( this ).addClass("valid");
-	});
-	
-	
-	
-	$( "#login-btn" ).click(function (e) {
-		e.preventDefault();
-		
-		var student = {
-			"student_id": $( "#student_id" ).val(),
-			"password": $( "#password" ).val()
-		};
-		
-		
-		if (login(student)) {
-			$( "#password" ).val(""); 
-			$( "#student_id" ).val("");
-			$( "#login-screen" ).removeClass("is-shown");
-			$( "#home-screen" ).addClass("is-shown");
-		} else {
-			$( "#login-screen input" ).addClass("invalid");
-		}
-	});
-	
-	$( "#logout-btn" ).click(function (e) {
-		e.preventDefault();
-		logout();
-		
-		$( "#login-screen" ).addClass("is-shown");
-		$( "#home-screen" ).removeClass("is-shown");
-		
-	});
-	
-});
-
-
